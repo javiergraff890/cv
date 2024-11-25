@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding-top: 20px; /* Espacio arriba */
+        }
+
+        .container {
+            width: 60%;
+            max-width: 900px;
+            background-color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .header img {
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .header .info {
+            margin-left: 20px;
+            text-align: right;
+            flex-grow: 1;
+        }
+
+        .header .info h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        .header .info p {
+            margin: 5px 0 0;
+            color: #555;
+        }
+
+        .content {
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+            background-color: #eaeaea;
+        }
+
+        .column {
+            flex: 1;
+        }
+
+        .column h3 {
+            margin: 20px 0 10px; /* Espacio antes del título */
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .column p {
+            margin: 0 0 10px;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin: 10px 0;
+        }
+
+        ul li {
+            margin-bottom: 5px;
+            color: #333;
+            font-size: 1rem;
+            line-height: 1.5;
+            position: relative;
+        }
+
+        ul li::before {
+            /* content: '✔'; */
+            position: absolute;
+            left: -20px;
+            color: #4caf50;
+            font-size: 1rem;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-top: 1px solid #ddd;
+        }
+
+        .footer a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 80%;
+            }
+
+            .content {
+                flex-direction: column-reverse;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                width: 95%;
+            }
+
+            .header .info {
+                text-align: center;
+            }
+
+            .header {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            
+            <!-- ATENCION -->
+             <!-- ANTES DE SUBIR AL HOSTING CAMBIAR profile.jpg por cv/profile.jpg,
+              deberia configurarlo en el hosting diferente pero por ahora lo dejo asi -->
+            <img src="profile.jpg" alt="Foto de perfil">
+            <div class="info">
+                <h1>Javier Graff</h1>
+                <p>ESTUDIANTE DE INGENIERÍA EN COMPUTACIÓN</p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="column">
+                <h3>EDUCACIÓN</h3>
+                <p>Universidad Nacional del Sur. Bahía Blanca</p>
+                <p>Técnico en informática personal y profesional en Escuela De Educación Secundaria Nº3 "Mariano Moreno". Huanguelén.</p>
+                <h3>CIUDAD</h3>
+                <p>Bahía Blanca, Buenos Aires, Argentina</p>
+                <h3>EXTRACURRICULAR</h3>
+                <p>Trabajos de Apicultura</p>
+                <h3>EXPERIENCIA</h3>
+                <p>Práctica Profesional Supervisada en Plataforma Sustentabilidad Integral. Colaboración en el desarrollo de una App utilizando Expo - React Native y Php</p>
+                <p>Freelance, sitio web para la toma de pedidos por Whatsapp y un panel de administración utilizando React y .NET</p>             
+                <h3>CONTACTO</h3>
+                <p>Cel: 2923 - 649285</p>
+                <p>jjaviergraff@gmail.com</p>
+                <p>Bahía Blanca, Buenos Aires</p>
+            </div>
+            <div class="column">
+                <h3>SOBRE MI</h3>
+                <p>Estudiante de Ingeniería en Computación en la Universidad Nacional del Sur, con el proyecto final de carrera por completar para finalizar.
+                    Conocimientos y desarrollos a pequeña escala en Java, SQL, JavaScript, C, Python, entre otros, realizados en asignaturas de la universidad. 
+                    En el ámbito web tengo interés en el desarrollo backend y estoy realizando proyectos personales en .NET complementados con React, sin embargo, estoy abierto a trabajar con otros lenguajes y tecnologías.
+                    Estoy buscando un empleo a tiempo parcial o completo, dándole prioridad al aprendizaje por lo que estoy disponible para escuchar cualquier propuesta.
+                    Estaré subiendo mis proyectos a medida que estén finalizados en <a href="https://proyectos.javiergraff.com.ar">proyectos.javiergraff.com.ar</a>. En caso de encontrarse caído ese sitio, se puede acceder temporalmente desde <a href="https://javiergraff.dev.ar">javiergraff.dev.ar</a></p>
+                <h3>TECNOLOGÍAS</h3>
+                <p>Diferentes proyectos y actividades realizados durante el cursado de las distintas asignaturas incluidas en el plan de estudios, implementados con variedad de tecnologías, entre las que se encuentran</p>
+                <ul>
+                    <li>C</li>
+                    <li>C#</li>
+                    <li>Java</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>Php</li>
+                    <li>SQL</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer">
+            <a href="cvgraffjavier.pdf" download>Descargar mi CV en PDF</a>
+        </div>
+    </div>
+</body>
+</html>
