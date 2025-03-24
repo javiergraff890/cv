@@ -1,0 +1,123 @@
+/* Estilos Generales */
+body {
+    font-family: 'Montserrat', sans-serif; /* Usando Montserrat como fuente */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center; /* Centra el contenido en el eje horizontal */
+    flex-direction: column; /* Hace que el contenido se organice en una columna */
+    min-height: 100vh; /* Asegura que el body ocupe al menos el 100% de la altura de la pantalla */
+    overflow-x: hidden; /* Evita el desbordamiento horizontal */
+}
+
+.container {
+    width: 100%;
+    max-width: 800px; /* Ancho máximo para el contenido */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    flex-grow: 1; /* Permite que la sección crezca si es necesario */
+    overflow-y: auto; /* Permite el desplazamiento vertical si el contenido excede la altura */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+    font-weight: bold; /* Asegura que el título principal esté en negrita */
+    color: #000; /* Color negro para el nombre */
+}
+
+h2 {
+    font-size: 1.0em;
+    color: #000; /* Cambiar el color a negro */
+    font-weight: bold; /* Asegura que el subtítulo también esté en negrita */
+}
+
+p {
+    font-size: 1em;
+    margin: 5px 0;
+    color: #000; /* Cambiar el color de los párrafos a negro */
+}
+
+/* Centrar todos los títulos */
+h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #000; /* Cambiar el color de los títulos de sección a negro */
+    text-align: center; /* Centra los títulos de las secciones */
+    font-weight: bold; /* Asegura que los títulos de las secciones estén en negrita */
+}
+
+hr {
+    border: 0;
+    border-top: 2px solid #ccc;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul li {
+    font-size: 1em;
+    margin: 5px 0;
+    font-weight: 600; /* Aplicamos negrita ligera a los elementos de la lista */
+    color: #000; /* Cambiar el color de los ítems de la lista a negro */
+}
+
+/* Asegura que la parte inferior esté visible y no se desborde */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+    color: #333;
+    position: relative;
+    width: 100%;
+}
+
+/* Media Query para pantallas pequeñas (móviles) */
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 15px; /* Reducir el padding para aprovechar más el espacio */
+        max-width: 100%; /* El ancho máximo será el 100% en móviles */
+    }
+
+    h1 {
+        font-size: 2em; /* Reducir el tamaño de la fuente para el título */
+    }
+
+    h2 {
+        font-size: 1.2em; /* Reducir el tamaño del subtítulo */
+    }
+
+    h3 {
+        font-size: 1.5em; /* Reducir el tamaño de los títulos de las secciones */
+    }
+
+    p {
+        font-size: 0.9em; /* Reducir el tamaño de los párrafos */
+    }
+
+    ul li {
+        font-size: 0.9em; /* Reducir el tamaño de la lista */
+    }
+
+    /* Mejorar la visibilidad del contenido en pantallas pequeñas */
+    hr {
+        margin: 10px 0; /* Reducir el margen en pantallas pequeñas */
+    }
+
+    /* Ajustar los márgenes del header y las secciones */
+    header {
+        margin-bottom: 20px;
+    }
+}
